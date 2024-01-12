@@ -4,11 +4,10 @@ figma.showUI(__html__, { themeColors: true, height: 280 })
 // callback. The callback will be passed the "pluginMessage" property of the
 // posted message.
 
-figma.ui.onmessage = msg => {
+figma.ui.onmessage = ({ msg }: { msg: string }) => {
   // One way of distinguishing between different types of messages sent from
   // your HTML page is to use an object with a "type" property like this.
-  const { msg } = msg;
   console.log(msg);
   // figma.closePlugin();
-
 };
+
