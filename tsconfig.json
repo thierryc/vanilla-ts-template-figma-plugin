@@ -6,6 +6,7 @@
       "./node_modules/@types",
       "./node_modules/@figma"
     ],
-    "moduleResolution": "Node"
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
   }
 }
